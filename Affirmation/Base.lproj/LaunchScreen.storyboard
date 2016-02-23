@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +18,50 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0161" translatesAutoresizingMaskIntoConstraints="NO" id="9nA-C9-8Y3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="✓Affirmation" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="njN-Tr-DDJ">
+                                <rect key="frame" x="20" y="272" width="560" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9nA-C9-8Y3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4WW-Bz-Rz2"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="EJB-kh-Shs"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Iii-C2-J9o"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MI9-I8-qwE"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="252" id="OML-i3-NTd"/>
+                            <constraint firstAttribute="trailing" secondItem="9nA-C9-8Y3" secondAttribute="trailing" id="Y2A-a9-Qfr"/>
+                            <constraint firstItem="9nA-C9-8Y3" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="hhW-ao-mVv"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ikm-YW-gVK"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="lxM-D8-6It"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="252" id="o5B-QD-FHP"/>
+                            <constraint firstItem="9nA-C9-8Y3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vDu-Ce-QWC"/>
+                            <constraint firstItem="njN-Tr-DDJ" firstAttribute="centerY" secondItem="9nA-C9-8Y3" secondAttribute="centerY" id="wt5-eg-cn2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EJB-kh-Shs"/>
+                                <exclude reference="MI9-I8-qwE"/>
+                                <exclude reference="o5B-QD-FHP"/>
+                                <exclude reference="wt5-eg-cn2"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="54" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0161" width="682" height="512"/>
+    </resources>
 </document>
