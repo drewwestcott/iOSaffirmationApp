@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let screenHeight = UIScreen.mainScreen().bounds.height
     @IBOutlet weak var screenSize: UILabel!
     
+    //Create empty array to store each days meditation details.
     var meditaion = [Affirmation]()
     
     //Set up userdefaults
