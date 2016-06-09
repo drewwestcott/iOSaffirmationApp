@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A008CAB1CC2B34B0023343D /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A008CAA1CC2B34B0023343D /* Affirmation.swift */; };
 		3A8B340A1C027CBA00B0CF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B34091C027CBA00B0CF67 /* AppDelegate.swift */; };
 		3A8B340C1C027CBA00B0CF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B340B1C027CBA00B0CF67 /* ViewController.swift */; };
 		3A8B340F1C027CBA00B0CF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B340D1C027CBA00B0CF67 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		3A8B34141C027CBA00B0CF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B34121C027CBA00B0CF67 /* LaunchScreen.storyboard */; };
 		3A8B341F1C027CBA00B0CF67 /* AffirmationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B341E1C027CBA00B0CF67 /* AffirmationTests.swift */; };
 		3A8B342A1C027CBA00B0CF67 /* AffirmationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B34291C027CBA00B0CF67 /* AffirmationUITests.swift */; };
+		3AC897DB1CEA471700214E97 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC897DA1CEA471700214E97 /* csv.swift */; };
+		3AC897DF1CEA79F400214E97 /* shedding-weight.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3AC897DE1CEA79F400214E97 /* shedding-weight.csv */; };
+		3AF2115B1CAEC94B00B76763 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2115A1CAEC94B00B76763 /* DetailsViewController.swift */; };
+		3AF2115D1CAECB4000B76763 /* AffirmationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2115C1CAECB4000B76763 /* AffirmationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A008CAA1CC2B34B0023343D /* Affirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		3A4E57BC1C80E13500027716 /* Affirmation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Affirmation.entitlements; sourceTree = "<group>"; };
 		3A8B34061C027CBA00B0CF67 /* Affirmation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affirmation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B34091C027CBA00B0CF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8B340B1C027CBA00B0CF67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,10 @@
 		3A8B34251C027CBA00B0CF67 /* AffirmationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B34291C027CBA00B0CF67 /* AffirmationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationUITests.swift; sourceTree = "<group>"; };
 		3A8B342B1C027CBA00B0CF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC897DA1CEA471700214E97 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		3AC897DE1CEA79F400214E97 /* shedding-weight.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shedding-weight.csv"; sourceTree = "<group>"; };
+		3AF2115A1CAEC94B00B76763 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3AF2115C1CAECB4000B76763 /* AffirmationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A008CA91CC2B3380023343D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3A88ED061CC1635500914CBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B340B1C027CBA00B0CF67 /* ViewController.swift */,
+				3AF2115A1CAEC94B00B76763 /* DetailsViewController.swift */,
+				3AF2115C1CAECB4000B76763 /* AffirmationCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3A88ED071CC1636000914CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A008CAA1CC2B34B0023343D /* Affirmation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3A8B33FD1C027CBA00B0CF67 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +133,16 @@
 		3A8B34081C027CBA00B0CF67 /* Affirmation */ = {
 			isa = PBXGroup;
 			children = (
+				3AC897DC1CEA472100214E97 /* View */,
+				3A88ED071CC1636000914CBC /* Model */,
+				3A88ED061CC1635500914CBC /* Controller */,
+				3AC897DD1CEA472B00214E97 /* Resources */,
+				3A008CA91CC2B3380023343D /* Services */,
+				3A4E57BC1C80E13500027716 /* Affirmation.entitlements */,
 				3A8B34091C027CBA00B0CF67 /* AppDelegate.swift */,
-				3A8B340B1C027CBA00B0CF67 /* ViewController.swift */,
-				3A8B340D1C027CBA00B0CF67 /* Main.storyboard */,
 				3A8B34101C027CBA00B0CF67 /* Assets.xcassets */,
-				3A8B34121C027CBA00B0CF67 /* LaunchScreen.storyboard */,
 				3A8B34151C027CBA00B0CF67 /* Info.plist */,
+				3AC897DE1CEA79F400214E97 /* shedding-weight.csv */,
 			);
 			path = Affirmation;
 			sourceTree = "<group>";
@@ -123,6 +163,23 @@
 				3A8B342B1C027CBA00B0CF67 /* Info.plist */,
 			);
 			path = AffirmationUITests;
+			sourceTree = "<group>";
+		};
+		3AC897DC1CEA472100214E97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B340D1C027CBA00B0CF67 /* Main.storyboard */,
+				3A8B34121C027CBA00B0CF67 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3AC897DD1CEA472B00214E97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AC897DA1CEA471700214E97 /* csv.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +251,11 @@
 					3A8B34051C027CBA00B0CF67 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 5AZ7M68G8R;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3A8B34191C027CBA00B0CF67 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -232,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC897DF1CEA79F400214E97 /* shedding-weight.csv in Resources */,
 				3A8B34141C027CBA00B0CF67 /* LaunchScreen.storyboard in Resources */,
 				3A8B34111C027CBA00B0CF67 /* Assets.xcassets in Resources */,
 				3A8B340F1C027CBA00B0CF67 /* Main.storyboard in Resources */,
@@ -259,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC897DB1CEA471700214E97 /* csv.swift in Sources */,
+				3A008CAB1CC2B34B0023343D /* Affirmation.swift in Sources */,
+				3AF2115D1CAECB4000B76763 /* AffirmationCell.swift in Sources */,
 				3A8B340C1C027CBA00B0CF67 /* ViewController.swift in Sources */,
 				3A8B340A1C027CBA00B0CF67 /* AppDelegate.swift in Sources */,
+				3AF2115B1CAEC94B00B76763 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +469,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Affirmation/Affirmation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Affirmation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.Affirmation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +484,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Affirmation/Affirmation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Affirmation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.Affirmation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -487,6 +562,7 @@
 				3A8B34301C027CBA00B0CF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8B34311C027CBA00B0CF67 /* Build configuration list for PBXNativeTarget "AffirmationTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +571,7 @@
 				3A8B34331C027CBA00B0CF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8B34341C027CBA00B0CF67 /* Build configuration list for PBXNativeTarget "AffirmationUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +580,7 @@
 				3A8B34361C027CBA00B0CF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
